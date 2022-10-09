@@ -27,10 +27,10 @@ class AddPost extends StatelessWidget {
                   var now = DateTime.now();
                   if (cubit.postImage == null) {
                     cubit.createPost(
-                        dateTime: now.toString(), text: textController.text);
+                        dateTime: now.toString(), text: textController.value.text)  ;
                   } else {
                     cubit.uploadPostImage(
-                        dateTime: now.toString(), text: textController.text);
+                        dateTime: now.toString(), text: textController.value.text);
                   }
                 },
                 child: const Text('Post'),
@@ -69,6 +69,9 @@ class AddPost extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     controller: textController,
+                    onChanged:(value){
+                      print(textController.text);
+                    },
                     decoration: const InputDecoration(
                         border: InputBorder.none,
                         hintText: 'What is on your mind ..'),

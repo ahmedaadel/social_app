@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:social_app/modules/Edit_Screen.dart';
 import 'package:social_app/modules/Home_Layout/Home_States.dart';
 import 'package:social_app/modules/Home_Layout/Home_cubit.dart';
@@ -145,7 +146,7 @@ class SettingsScreen extends StatelessWidget {
                 Expanded(child: OutlinedButton(onPressed: (){},child: const Text('Add photo') ,)),
                 const SizedBox(width: 10,),
                 OutlinedButton(onPressed: (){Navigator.push(context,
-                    MaterialPageRoute(builder: (context) =>  EditScreen(),));},child:const Icon(Icons.edit) ,)
+                    MaterialPageRoute(builder: (context) => const EditScreen(),));},child:const Icon(IconlyBroken.edit) ,)
               ],
             )
           ],

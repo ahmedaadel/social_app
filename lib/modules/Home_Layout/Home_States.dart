@@ -48,3 +48,37 @@ class CreatePostErrorState extends HomeStates {}
 
 class RemovePostImageState extends HomeStates {}
 
+// get posts
+
+
+class GetPostsSuccessState extends HomeStates {}
+
+class GetPostsLoadingState extends HomeStates {}
+
+class GetPostsErrorState extends HomeStates {}
+
+//likes
+
+class PostLikeSuccessState extends HomeStates {}
+
+
+class PostLikeErrorState extends HomeStates {}
+
+// Chat users
+
+class GetAllUserSuccessState extends HomeStates {}
+
+class GetAllUserErrorState extends HomeStates {}
+
+
+// chat messeges
+
+class SendMessageSuccessState extends HomeStates {}
+
+class SendMessageErrorState extends HomeStates {}
+
+class SendMessageToFriendSuccessState extends HomeStates {}
+
+class SendMessageToFriendErrorState extends HomeStates {}
+
+class GetMessageSuccessState extends HomeStates {}

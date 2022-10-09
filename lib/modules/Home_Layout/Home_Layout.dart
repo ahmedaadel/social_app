@@ -1,11 +1,10 @@
-import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:social_app/modules/Home_Layout/Home_States.dart';
 import 'package:social_app/modules/Home_Layout/Home_cubit.dart';
 import 'package:social_app/modules/Navbar_Screens/PostScreen.dart';
-import 'package:social_app/shared/components/components.dart';
+import 'package:flutter_iconly/flutter_iconly.dart';
+
 
 class HomeLayout extends StatelessWidget {
   const HomeLayout({Key? key}) : super(key: key);
@@ -25,8 +24,8 @@ class HomeLayout extends StatelessWidget {
             appBar: AppBar(
               title: Text(cubit.titles[cubit.currentIndex]),
               actions: [
-                IconButton(onPressed: (){}, icon:const Icon(Icons.snapchat)),
-                IconButton(onPressed: (){}, icon:const Icon(Icons.search)),
+                IconButton(onPressed: (){}, icon:const Icon(IconlyBroken.notification)),
+                IconButton(onPressed: (){}, icon:const Icon(IconlyBroken.search)),
               ],
             ),
             body: cubit.screens[cubit.currentIndex],
@@ -38,11 +37,11 @@ class HomeLayout extends StatelessWidget {
               currentIndex: cubit.currentIndex,
               items: const
               [
-                BottomNavigationBarItem(icon: Icon(Icons.home),label:'Home'),
-                BottomNavigationBarItem(icon: Icon(Icons.chat_bubble),label:'Chat'),
+                BottomNavigationBarItem(icon: Icon(IconlyBroken.home),label:'Home'),
+                BottomNavigationBarItem(icon: Icon(IconlyBroken.chat),label:'Chat'),
                 BottomNavigationBarItem(icon: Icon(Icons.post_add_outlined),label:'Post'),
-                BottomNavigationBarItem(icon: Icon(Icons.location_on),label:'Users'),
-                BottomNavigationBarItem(icon: Icon(Icons.settings),label:'Settings')
+                BottomNavigationBarItem(icon: Icon(IconlyBroken.location),label:'Users'),
+                BottomNavigationBarItem(icon: Icon(IconlyBroken.setting),label:'Settings')
               ],
             ),
         );

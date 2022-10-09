@@ -5,9 +5,11 @@ class PostModel {
   String? postImage;
   String? text;
   String? dateTime ;
-  PostModel({ this.dateTime, this.name,
+  PostModel(
+      { this.dateTime, this.name,
     this.text, this.uId ,this.postImage,
-     this.image});
+     this.image
+      });
 
   PostModel.fromJson(Map<String,dynamic>? json)
   {

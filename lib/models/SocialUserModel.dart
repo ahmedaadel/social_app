@@ -19,7 +19,7 @@ class UserModel {
     email=json!['email'];
     phone=json!['phone'];
     isVerified=json!['isVerified'];
-    uId=json!['uId'];
+    uId=json!['uid'];
     image=json!['image'];
     cover=json!['cover'];
     bio=json!['bio'];
@@ -28,7 +28,8 @@ class UserModel {
 
   Map<String,dynamic> toMap ()
   {
-    return {'name':name,
+    return {
+      'name':name,
     'email':email,
     'phone':phone,
       'uid':uId,

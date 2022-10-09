@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     UserID=CacheHelper.getData(key: 'uId');
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => HomeCubit()..getUser(),)],
+      providers: [BlocProvider(create: (context) => HomeCubit()..getUser()..getPosts(),)],
       child: BlocConsumer<HomeCubit,HomeStates>(
         listener: (context, state) {},
         builder: (context, state) {
