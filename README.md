@@ -2,15 +2,12 @@
 
 A new Flutter project.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+- social app allow user to make an account , have a profile with his own information
 
-A few resources to get you started if this is your first Flutter project:
+- info is changeable and stored in local database 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- user can chat with his friend
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- user have a home page that contains some posts 
